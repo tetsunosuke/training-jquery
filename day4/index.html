@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>training-jquery</title>
+<script src="./js/lib/jquery/jquery-1.12.3.min.js"></script>
+<script src="./js/myapp.js"></script>
+<link href="./css/main.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+<h1>DOM</h1>
+<div>
+<p>day4からちょっと新しい知識が必要になってきます</p>
+<p>DOM（Document Object Model）という言葉をもし知らなければ少し説明します</p>
+</div>
+<!-- html here -->
+<div id="tours">
+  <h1>Guided Tours</h1>
+  <ul>
+    <li class="usa tour">
+      <h2>New York, New York</h2>
+      <p><span class="details">$1,899 for 7 nights</span></p>
+    </li>
+    <li class="japan tour">
+      <h2>Tokyo</h2>
+      <p><span class="details">$1,000 for 5 nights</span></p>
+    </li>
+  </ul>
+</div>
+
+
+<hr/>
+
+<div>
+<p>js/myapp.jsを編集して、下記の操作をして下さい</p>
+<p><a href="http://www.jquerystudy.info/reference/manipulation/index.html">Manupilation</a> や <a href="http://www.jquerystudy.info/reference/traversing/index.html">Traversing</a> や <a href="http://www.jquerystudy.info/reference/attributes/index.html">Attributes</a> が必要になるかもしれません</p>
+<ol>
+<li> &lt;button class="book"&gt;Book Now&lt;/button&gt; を NewYorkのliの中に追加して下さい（ボタンがnightsの後ろにつけばOK）</li>
+<li> &lt;span&gt;*&lt;/span&gt;を $1,000 の前につけてください（&lt;p&gt;&lt;span&gt;*&lt;/span&gt;&lt;span class="details"&gt;$1,000 for 5 nights&lt;/span&gt;となれば正しい）</li>
+<li>実はこのページにはcss/main.css のCSSが適用されています。先ほど追加した「*」を赤くして下さい（CSSを書き換えてはいけません）... siblings() という関数を使うかもしれません。</li>
+<ul>
+</ol>
+</div>
+
+</body>
+</html>
