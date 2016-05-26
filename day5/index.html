@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>training-jquery</title>
+<script src="./js/lib/jquery/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<!-- html here -->
+<h1>Event</h1>
+<p>今回は「イベント」を扱います。JavaScriptでも addEventListener などを使って「クリックしたら」などのイベントを扱うことができましたが、jQueryだと比較的容易にイベントの設定ができます</p>
+
+
+<h2>Sample Events</h2>
+<div>
+<p><button id="clickhere">button</button><span id="text">text</span></p>
+<p><button id="clickhere2">button2</button></p>
+</div>
+<div>
+<p id="togoogle"><a href="http://www.google.com">Google</a></p>
+</div>
+<div>
+<form>
+<p>
+<select name="lunch">
+<option value="選択して下さい">選択して下さい</option>
+<option value="天華">天華</option>
+<option value="サラダニース">サラダニース</option>
+<option value="もうやん">もうやん</option>
+</select>
+<span id="lunch_selected">-</span>
+</p>
+<p><input id="textinput" style="background-color:#EEEEEE" type="text" size="40" placeholder="ここに文字を入れたり消したりします"></p>
+</form>
+</div>
+
+<hr/>
+<p>今回は<a href="http://www.jquerystudy.info/reference/events/on.html">onメソッド</a>の説明をよく読んでから試してみましょう</p>
+<ol>
+<li>buttonと書かれたボタンは押しても現在何の反応もありません。ボタンを押したらボタンの右にあるtextを非表示にしたり、表示させたりしてみましょう</li>
+<li>button2と書かれたボタンを押したら、そのボタンのスタイルや、ボタンの文字列（button2）を変更してみましょう</li>
+<li>google へのリンクにマウスを乗せたら、Googleの文字列を「ぐーぐる」に変えてみましょう</li>
+<li>「選択して下さい」のプルダウンを変更したら、id="lunch_selected" の - を「選択されました」に変更しましょう。（何に変わったかを入れたいけど、それはまた今度）</li>
+<li>「ここに文字を入れたり消したりします」と書かれたフォームにフォーカスした時に、背景を白くしましょう。また、文字を入力した時に、フォームのテキストの幅をどんどん長くしてみましょう。</li>
+
+</ol>
+</body>
+</html>
