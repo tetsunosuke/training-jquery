@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>training-jquery</title>
+<script src="./js/lib/jquery/jquery-1.12.3.min.js"></script>
+<link rel="stylesheet" href="./mdl/material.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./mdl/material.min.js"></script>
+<script src="./js/app.js"></script>
+</head>
+<body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+        <main mdk-layout__content>
+            <div class="demo-container mdl-grid">
+                <div id="explanation" class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                <h3>day7(Using Plugins)</h3>
+
+                <h4>下記の二行を追加してプラグインを読み込んで下さい</h4>
+                <textarea rows="5" cols="80">
+<script src="./js/lib/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="./js/lib/jquery-ui-1.11.4/jquery-ui.min.css">
+                </textarea>
+                <h4>下記のボタンを押して、ダイアログが出るようにして下さい</h4>
+                <a id="close" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">dialog</a>
+                <p><a href="http://api.jqueryui.com/dialog/">リファレンス</a> を見るのですよ...</p>
+            </div>
+        </main>
+    </div>
+    <div id="dialog">
+    </div>
+</body>
+</html>
